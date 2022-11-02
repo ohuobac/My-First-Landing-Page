@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>😋 Zeta Blend</title>
+    <style>
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        border-radius: 10px;
+        background: beige;
+      }
+      body {
+        background: center/50%
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/193/original/shecodes-basics-bckground-image.jpg?1667406455");
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+        color: #d88976;
+        font-size: 48;
+        line-height: 1.5;
+        padding: 15px 30px;
+        margin: 30px auto;
+        border-radius: 10px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background: #f5df90;
+      }
+
+      h2 {
+        text-align: center;
+
+        font-size: 24;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: fit-content;
+        border-radius: 10;
+        background-size: 100%;
+        background-position: center;
+      }
+
+      p {
+        margin: 20px 0 10px;
+        line-height: 1.2;
+        font-size: 16;
+      }
+
+      a {
+        display: inline;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: coral;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #f5df90;
+        color: #d88976;
+        line-height: 22px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 12px 22px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 5, 5, 10 rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      .button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background: #c77d74;
+        color: #e3ca60;
+      }
+
+      .footer {
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="font-size: 48px">Zeta Blend</h1>
+      <h2>😋 Multigrain-nut Powder for kids</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/013/original/images.jpg?1662891619"
+        alt="Multigrains/nuts"
+        width="200"
+      />
+      <hr />
+      <p>
+        Zeta Blend is a multigrain-nut powder that's made with all the love and
+        care of moms and grandma's 💕<br />
+        Feed your kids with the yummy and nutritious Zeta😋 to boost their
+        growth and development in their growing years. <br />
+      </p>
+      <br />
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/015/original/Sathu-Maavu-Ingredients-M.jpg?1662891641"
+        alt="Multigrain Powder"
+        width="200"
+      />
+      <hr />
+      <p>
+        Did you know that a Multigrain powder is a healthy mix of grains and
+        nuts that is given to babies from 1 to 8 years of age? 💡💭 <br />
+        It can be taken for the whole life but it's mandated till 8 years so as
+        to support the rapid development of the sprouting mind and body 💪😎
+      </p>
+      <p>
+        Click
+        <a
+          href="https://www.myhealthykiddo.com/multigrain-powder/"
+          target="_blank"
+        >
+          <em>here </em>
+        </a>
+        to learn more📚
+      </p>
+      <div>
+        Get Zeta product catalogue 📖<br />
+        Purchase Zeta Blend😋 <br />
+        Join an amazing community of Zeta Moms <br />
+        Learn recepies! Share experiences! Connect!
+      </div>
+      <br />
+      <button class="button">Get Catalogue</button>
+      <span class="footer">
+        Coded by
+        <strong>Ohuoba Chika </strong>
+      </span>
+      <script>
+        function join() {
+          let name = prompt("Enter your first name?");
+          let age = prompt("How old are you?");
+          let email = prompt("Enter your email?");
+
+          if (age >= 18) {
+            alert(
+              `Hi ${name}, Your decision to be a Zeta Mom is awesome👏👏, Check your email to see our product catalogue and also to join our Zeta Mom community🤗`
+            );
+          } else {
+            alert(
+              `We're sorry ${name}, you can't join the Zeta Mom community until youre 18 😔`
+            );
+          }
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", join);
+      </script>
+    </div>
+  </body>
+</html>
